@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escape the Room</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <a href="index.html" class="home-btn">Back To Home</a>
+
+  <div class="container">
+    <h1>Escape the Room</h1>
+    <p class="subtitle">You're locked in. Solve the puzzles one by one to get out!</p>
+
+    <div class="box" id="password-box">
+      <p class="emoji">🔒</p>
+      <label for="password">Enter the secret password:</label>
+      <input type="text" id="password" placeholder="Type the password..." />
+      <button onclick="checkPassword()">Unlock Door</button>
+    </div>
+
+    <div class="box hidden" id="puzzle1">
+      <p class="emoji">🧠</p>
+      <p><strong>What's 3 × 7 + 1?</strong></p>
+      <button onclick="solveRiddle1()">Solve</button>
+    </div>
+
+    <div class="box hidden" id="puzzle2">
+      <p class="emoji">🧠</p>
+      <p><strong>What comes next: 2, 4, 6, ?</strong></p>
+      <button onclick="solveRiddle2()">Solve</button>
+    </div>
+
+    <div class="box hidden" id="puzzle3">
+      <p class="emoji">🧠</p>
+      <p><strong>Guess the word: "It has keys but no locks"</strong></p>
+      <button onclick="solveRiddle3()">Solve</button>
+    </div>
+
+    <p class="footer">Can you escape before time runs out?</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

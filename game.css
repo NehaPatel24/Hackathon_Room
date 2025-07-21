@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1544631008-534b4b6c1215?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdhbWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  margin-top: 80px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: linear-gradient(to right, #ebca27, #df1f22, #e9c826); 
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: linear-gradient(to right, #f8c44f, #d96d23);
+  color: #000000;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+   background: linear-gradient(to right, #d96d23, #f8c44f);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  text-decoration: none;
+   background: linear-gradient(to right, #d96d23, #f8c44f);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.home-btn:hover{
+      background: linear-gradient(to right, #f8c44f, #d96d23);
+}
+
+.hidden {
+  display: none;
+}

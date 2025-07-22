@@ -70,13 +70,13 @@ header {
   font-size: 40px;
   margin-bottom: 30px;
 }
-
-.gradient-text {
+ .gradient-text {
   font-weight: bold;
-  background: linear-gradient(to right, #c9ab17, #c41a1c, #b99f19);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  background: linear-gradient(to right, #c9ab17, #c41a1c, #b99f19); 
+  background-clip: text;  /* Clips background to text for WebKit browsers */
+  color: transparent;
+} 
+
 
 .bottom-box {
   font-size: 22px;

@@ -35,7 +35,7 @@ function solveRiddle2() {
 function solveRiddle3() {
   const answer = prompt('🧩 Guess the word: "It has keys but no locks"');
   if (answer.toLowerCase() === "keyboard") {
-    alert("🏆 You escaped the room! Congratulations!");
+    alert("🎉 Correct! Puzzle 3 passed.");
     document.getElementById("puzzle4").classList.remove("hidden");
   } else {
     alert("❌ Nope! Think again.");
@@ -43,9 +43,9 @@ function solveRiddle3() {
 }
 
 function solveRiddle4() {
-  const answer = prompt("🧩 I'm tall when I'm young and short when I'm old. What am I?");
-  if (answer.toLowerCase() === "candle") {
-    alert("🎉  Correct! Puzzle 4 passed.");
+  const answer = prompt("🧩 What's 12 ÷ 3 + 4?");
+  if (parseInt(answer) === 8) {
+    alert("🎉 Correct! Puzzle 4 passed.");
     document.getElementById("puzzle5").classList.remove("hidden");
   } else {
     alert("❌ Hmm... Try again.");
@@ -56,8 +56,18 @@ function solveRiddle5() {
   const answer = prompt("🧩 What's 5 × 5 - 10?");
   
   if (parseInt(answer) === 15) {
-    alert("🏆 You completed all puzzles! You're a true escape master!");
+    alert("🎉  Correct! Puzzle 5 passed.");
+    document.getElementById("puzzle6").classList.remove("hidden");
   } else {
     alert("❌ Try again.");
+  }
+}
+
+function solveRiddle6() {
+  const answer = prompt("🧩 I'm tall when I'm young and short when I'm old. What am I?");
+  if (answer.trim().toLowerCase() === "candle") {
+    alert("🏆 You completed all puzzles! You're a true escape master! 🏆");
+  } else {
+    alert("❌ Hmm... Try again.");
   }
 }
